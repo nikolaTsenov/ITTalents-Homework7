@@ -1,2 +1,2 @@
-# ITTalents-Homework7
+# MyFirstRepo
 8 page layouts
