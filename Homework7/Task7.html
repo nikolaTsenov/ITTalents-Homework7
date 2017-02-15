@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="LayoutTask7"/>
+<meta http-equiv="author" name="Nikola Tsenov" />
+<title>Site Page for Task 7</title>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="./assets/reset.css" type="text/css" />
+<link rel="stylesheet" href="Task7.css" type="text/css" />
+<!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="dropdown">
+					<!-- The inside of the button is unclickable, tried many tags, nothing worked. I liked my animation, so I just couldn't erase it...-->
+					<button onclick="dropdownFunction()" class="dropbtn"><!--  <p id="doIT">-->&#9776;<!-- &nbsp;<i class="fa fa-arrow-left" aria-hidden="true"></i></p>--></button>
+					<h2><a href="">Home</a></h2>
+  					<div id="myDropdown" class="dropdown-content">
+   						<a href="#mostPopular">ABOUT</a>
+   						<a href="#mostPopular">MOST POPULAR</a>
+   						<a href="#news">NEWS</a>
+   						<a href="#contact">CONTACTS</a>
+  					</div>
+				</div>
+				<form id="searchingForm">
+  					<input type="text" name="search" placeholder="Search..">
+				</form>
+				<h1 id="heading">MOVIES</h1>
+				<ul id="topperNav">
+					<li id="home"><a href="">HOME</a></li>
+					<li class="about"><a href="">ABOUT</a>
+						<div class="dropboxHover">
+							<a href="">Link 1</a>
+							<a href="">Link 2</a>
+							<a href="">Link 3</a>
+						</div>
+					</li>
+					<li id="mostPopular"><a href="">MOST POPULAR</a></li>
+					<li id="news"><a href="">NEWS</a></li>
+					<li id="contacts"><a href="">CONTACTS</a></li>
+					<li id="search"><a href=""><i class="fa fa-search"></i></a></li>
+				</ul>
+			</header>
+			<nav id="navigation">
+				<ul id="navList">
+					<li><a href="">CINEMA MOVIES</a></li>
+					<li><a href="">TV SERIES</a></li>
+					<li><a href="">CARTOONS</a></li>
+					<li><a href="">ANIME</a></li>
+					<li><a href="">NEW MOVIES</a></li>
+					<li><a href="">HD MOVIES</a></li>
+				</ul>
+			</nav>
+			<div id="firstCarousel">
+				<div id="carouselNavContainer1">
+					<h3 id="inHeader2">Gladiator</h3>
+					<p id="inHeaderDescription2">When a Roman general is betrayed and his family murdered by an emperor's corrupt 
+						son, he comes to Rome as a gladiator to seek revenge.</p>
+					<div id="aCarouselNavContainer1">
+						<a href="">LEARN MORE</a>
+						<a href="">WATCH TRAILER</a>
+					</div>
+				</div>
+				<div id="carouselNavContainer2">
+					<h3 id="inHeader3">Equilibrium</h3>
+					<p id="inHeaderDescription3">In a fascist future where all forms of feeling are illegal, a man in charge of 
+						enforcing the law rises to overthrow the system.</p>
+					<div id="aCarouselNavContainer2">
+						<a href="">LEARN MORE</a>
+						<a href="">WATCH TRAILER</a>
+					</div>
+				</div>
+				<div id="carouselNavContainer3">
+					<h3 id="inHeader">Matrix</h3>
+					<p id="inHeaderDescription">Enter the Matrix...</p>
+					<div id="aCarouselNavContainer3">
+						<a href="">LEARN MORE</a>
+						<a href="">WATCH TRAILER</a>
+					</div>
+				</div>
+				<div id="backGMenuContainer">
+					<ul id="backGMenu">
+						<li><a href="#" onclick="clickFunction1()"><img src="./assets/images/Carousel1/GladiatorButton.jpg" alt="Gladiator" /></a></li>
+						<li><a href="#" onclick="clickFunction2()"><img src="./assets/images/Carousel1/EquilibriumButton.jpg" alt="Equilibrium" /></a></li>
+						<li><a href="#" onclick="clickFunction3()"><img src="./assets/images/Carousel1/MatrixButton.jpg" alt="TheMatrix" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="genres">
+				<h3 id="watch">Watch your favourite movies online</h3>
+				<p id="watchParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni 
+					magnam tenetur quo maxime incidunt esse consequatur ratione dicta voluptatum ipsum 
+					perferendis quibusdam quis illo cupiditate dignissimos minus consequuntur vel ducimus.</p><p id="inCase449px"> ...</p>
+				<div id="watchForms">
+					<form action="" id="watchForm1">
+						<div class="rounded"><input type="checkbox" name="category" id="Action" /><label for="Action">Action</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Adventure" /><label for="Adventure">Adventure</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Animation" /><label for="Animation">Animation</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Biography" /><label for="Biography">Biography</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Comedy" /><label for="Comedy">Comedy</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Crime" /><label for="Crime">Crime</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Documentary" /><label for="Documentary">Documentary</label></div>
+					</form>
+					<form action="" id="watchForm2">
+						<div class="rounded"><input type="checkbox" name="category" id="Drama" /><label for="Drama">Drama</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Family" /><label for="Family">Family</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Fantasy" /><label for="Fantasy">Fantasy</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="game-show" /><label for="game-show">game-show</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="History" /><label for="History">History</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Horror" /><label for="Horror">Horror</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Kids" /><label for="Kids">Kids</label></div>
+					</form>
+					<form action="" id="watchForm3">
+						<div class="rounded"><input type="checkbox" name="category" id="Music" /><label for="Music">Music</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Musical" /><label for="Musical">Musical</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Mistery" /><label for="Mistery">Mistery</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="News" /><label for="News">News</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Romance" /><label for="Romance">Romance</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Sci-fi" /><label for="Sci-fi">Sci-fi</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Short" /><label for="Short">Short</label></div>
+					</form>
+					<form action="" id="watchForm4">
+						<div class="rounded"><input type="checkbox" name="category" id="Sport" /><label for="Sport">Sport</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Thriller" /><label for="Thriller">Thriller</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="War" /><label for="War">War</label></div><br/>
+						<div class="rounded"><input type="checkbox" name="category" id="Western" /><label for="Western">Western</label></div>
+					</form>
+				</div>
+				<input type="submit" name="submit" value="Search" id="theButton"/>
+			</div>
+			<div id="moreMovies">
+				<h3 id="moreMoviesHeading">More Movies</h3>
+				<section class="section">
+					<div id="section1">
+						<button type="submit" class="btn btn-success">
+    						<p>1000</p><i class="fa fa-binoculars" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>01:02:03</p><i class="fa fa-clock-o" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>901</p><i class="fa fa-heart" aria-hidden="true"></i>
+						</button>
+					</div>
+					<h4 class="subHeading">The Girl Next Door</h4>
+					<p class="subHeadingParagraph">2004</p>
+				</section>
+				<section class="section">
+					<div id="section2">
+						<button type="submit" class="btn btn-success">
+    						<p>1000</p><i class="fa fa-binoculars" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>01:02:03</p><i class="fa fa-clock-o" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>901</p><i class="fa fa-heart" aria-hidden="true"></i>
+						</button>
+					</div>
+					<h4 class="subHeading">The Game</h4>
+					<p class="subHeadingParagraph">1997</p>
+				</section>
+				<section class="section">
+					<div id="section3">
+						<button type="submit" class="btn btn-success">
+    						<p>1000</p><i class="fa fa-binoculars" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>01:02:03</p><i class="fa fa-clock-o" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>901</p><i class="fa fa-heart" aria-hidden="true"></i>
+						</button>
+					</div>
+					<h4 class="subHeading">Bad Boys</h4>
+					<p class="subHeadingParagraph">1995</p>
+				</section>
+				<section class="section">
+					<div id="section4">
+						<button type="submit" class="btn btn-success">
+    						<p>1000</p><i class="fa fa-binoculars" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>01:02:03</p><i class="fa fa-clock-o" aria-hidden="true"></i>
+						</button>
+						<button type="submit" class="btn btn-success">
+    						<p>901</p><i class="fa fa-heart" aria-hidden="true"></i>
+						</button>
+					</div>
+					<h4 class="subHeading">LA Confidential</h4>
+					<p class="subHeadingParagraph">1997</p>
+				</section>
+				<input type="submit" name="submit" value="View More" id="viewMore"/>
+			</div>
+			<!--   Lots of credentials for this part go to W3Schools -->
+			<div id="secondCarousel">
+				<h3 id="headingSecondCarousel">Testimonials</h3>
+				<div id="theCarousel">
+				<div class="w3-content w3-display-container">
+
+					<a class="w3-btn-floating w3-hover-dark-grey w3-display-left"
+						onclick="plusDivs(-1)">&#10094;</a> <a
+						class="w3-btn-floating w3-hover-dark-grey w3-display-right"
+						onclick="plusDivs(1)">&#10095;</a>
+
+					<div class="w3-display-container mySlides">
+						<img src="./assets/images/moreMovies/tGND.jpg" style="width: 60%">
+						<div>
+							<!-- class="w3-display-bottomleft w3-container w3-padding-4"--> 
+							The Girl Next Door</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+						<img src="./assets/images/moreMovies/theGame.jpg" style="width: 60%">
+						<div>
+							<!--class="w3-display-bottomright w3-container w3-padding-4 "-->
+							The Game</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+						<img src="./assets/images/moreMovies/bb.jpg" style="width: 60%">
+						<div>
+							<!-- class="w3-display-topleft w3-container w3-padding-4" -->
+							Bad Boys</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+						<img src="./assets/images/moreMovies/laC.jpg" style="width: 60%">
+						<div>
+							<!--  class="w3-display-topright w3-container w3-padding-4"> -->
+							LA Confidential</div>
+					</div>
+				</div>
+				</div>
+				<p id="textBelowCarousel">Lorem ipsum dolor sit amet, consectetur adipisicing
+					elit. Expedita architecto nesciunt ullam nam voluptatum repellendus esse 
+					fugiat maxime sunt ratione quidem cupiditate similique eaque perferendis 
+					eos magni asperiores animi! Excepturi?</p>
+			</div>
+			<div id="form">
+				<h3 id="mail">Mail us</h3>
+				<form action="" id="theForm">
+					<input type="text" placeholder="Your Name" id="name" class="inputForm"/>
+					<input type="text" placeholder="Your Email" id="email" class="inputForm"/>
+					<input type="text" placeholder="Your Message" id="message" class="inputForm"/>
+					<button type="submit" id="submitForm">Send</button>
+				</form>
+			</div>
+			<div id="location">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1G0baiH_Nlfhj2dlamBwBanIaWmA&msa=0&hl=bg&ie=UTF8&t=m&ll=42.66535200000001%2C23.28811100000007&spn=0.000888%2C0.002572&z=19&iwloc=0004cec306b9e3c285823&output=embed" frameborder="0" id="locationFrame"></iframe>
+			</div>
+			<footer id="footer">
+				<ul id="footerNav">
+					<li>Movies&copy; - Task7Layout</li>
+					<li>Questions? Call Us: 02/192837465</li>
+					<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-camera-retro fa-lg"></i></a></li>
+				</ul>
+				<a href="#navigation" id="goUp"><i class="fa fa-arrow-up" aria-hidden="true"></i>Go Up</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function dropdownFunction() {
+   				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+  			if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+   			for (i = 0; i < dropdowns.length; i++) {
+      		var openDropdown = dropdowns[i];
+     		if (openDropdown.classList.contains('show')) {
+        	openDropdown.classList.remove('show');
+      					}
+    				}
+  				}
+			}
+		</script>
+		<script type="text/javascript">
+		function changeBackground1() {
+		    document.getElementById("firstCarousel").style.backgroundImage = "url('./assets/images/Carousel1/Gladiator.jpg')";
+		}
+		function changeBackground2() {
+		    document.getElementById("firstCarousel").style.backgroundImage = "url('./assets/images/Carousel1/Equilibrium.jpg')";
+		}
+		function changeBackground3() {
+		    document.getElementById("firstCarousel").style.backgroundImage = "url('./assets/images/Carousel1/Matrix.png')";
+		}
+		
+		/* First click is little buggy, then it works fine, just couldn't find why... */
+		function showCarouselNavContainer1() {
+		    var x = document.getElementById('carouselNavContainer1');
+		    var y = document.getElementById('carouselNavContainer2');
+		    var z = document.getElementById('carouselNavContainer3');
+		    if (x.style.display === 'block') {
+		    	return
+		    }
+		    if (x.style.display === 'none') {
+		    	x.style.display = 'block';
+		        y.style.display = 'none';
+		        z.style.display = 'none';
+		    } else {
+		        x.style.display = 'none';
+		    }
+		}
+		function showCarouselNavContainer2() {
+		    var x = document.getElementById('carouselNavContainer1');
+		    var y = document.getElementById('carouselNavContainer2');
+		    var z = document.getElementById('carouselNavContainer3');
+		    if (y.style.display === 'block') {
+		    	return
+		    }
+		    if (y.style.display === 'none') {
+		    	y.style.display = 'block';
+		    	x.style.display = 'none';
+		        z.style.display = 'none';
+		    } else {
+		        y.style.display = 'none';
+		    }
+		}
+		function showCarouselNavContainer3() {
+		    var x = document.getElementById('carouselNavContainer1');
+		    var y = document.getElementById('carouselNavContainer2');
+		    var z = document.getElementById('carouselNavContainer3');
+		    if (z.style.display === 'block') {
+		    	return
+		    }
+		    if (z.style.display === 'none') {
+		    	z.style.display = 'block';
+		    	x.style.display = 'none';
+		        y.style.display = 'none';
+		    } else {
+		        z.style.display = 'none';
+		    }
+		}
+		
+		function clickFunction1() {
+			changeBackground1();
+			showCarouselNavContainer1();
+		}
+		function clickFunction2() {
+			changeBackground2();
+			showCarouselNavContainer2();
+		}
+		function clickFunction3() {
+			changeBackground3();
+			showCarouselNavContainer3();
+		}
+		</script>
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+	</body>
+</html>

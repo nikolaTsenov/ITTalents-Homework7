@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+/* Settings for the whole page */
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #D3D3D3; /* For browsers that do not support gradients */
+  	background: -webkit-radial-gradient(circle, #eff2f7, #6a7ea0, #315a9e); /* Safari */
+  	background: -o-radial-gradient(circle, #eff2f7, #6a7ea0, #315a9e); /* Opera 11.6 to 12.0 */
+  	background: -moz-radial-gradient(circle, #eff2f7, #6a7ea0, #315a9e); /* Firefox 3.6 to 15 */
+  	background: radial-gradient(circle, #eff2f7, #6a7ea0, #315a9e); /* Standard syntax */
+}
+@media all and (max-width:1169px) {
+	body {
+		width: 100%;
+		height: 500px;
+		margin: 0 auto;
+	}
+}
+/* Make it liquid */
+#page-container {
+	width: 1170px;
+	height: 35em;
+	margin: 1em auto;
+	border: 1px dashed black;
+	background-image: url('./assets/images/roulette.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+@media all and (max-width:1169px) {
+	#page-container {
+		width: 100%;
+		height: 500px;
+		margin: 0 auto;
+		border: none;
+		background-image: url('./assets/images/roulette.jpg');
+		background-repeat: no-repeat;
+		background-position: center 1.375em;
+		display: table;
+		padding-top: 0;
+	}
+}
+@media all and (max-width:449px) {
+	#page-container {
+		width: 100%;
+		height: 500px;
+		margin: 0 auto;
+		border: none;
+		background-image: url('./assets/images/roulette.jpg');
+		background-repeat: no-repeat;
+		background-position: center 6.35em;
+		background-size: 100% 18.75em;
+		padding-top: 0;
+		min-height: 480px;
+		min-width: 320px;
+	}
+}
+#roulette {
+	width: 1170px;
+	height: 33.8em;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+@media all and (max-width:1169px) {
+	#roulette {
+		width: 100%;
+		height: 100%;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+@media all and (max-width:449px) {
+	#roulette {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+}
+@-moz-keyframes rotate {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(1080deg); }
+}
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); }
+}
+@-o-keyframes rotate {
+  from { -o-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(1080deg); }
+}
+#invisible-frame {
+	border-radius: 175px;
+	width: 21.875em;
+	height: 21.875em;
+	display: inline-block;
+	animation: rotate;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+@media all and (max-width:449px) {
+	#invisible-frame {
+		width: 46%;
+		height: 44%;
+		animation: rotate;
+		animation-duration: 15s;
+		animation-iteration-count: infinite;
+	}
+}
+#ball {
+	display: block;
+  	background: black;
+  	border-radius: 0.5em;
+  	height: 1em;
+  	width: 1em;
+  	margin: 0 auto;
+}
