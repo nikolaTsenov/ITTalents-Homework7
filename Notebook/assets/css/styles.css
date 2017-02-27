@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+}
+#table {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+#table tr {
+	height: 2em;
+}
+#table td, #table th {
+	border: 1px solid black;
+	vertical-align: center;
+}
+#table th {
+	background-color: orange;
+}
+.td1, .td2 {
+	background-color: green;
+}
+.td3, .td4 {
+	background-color: yellow;
+}
+.td5 {
+	background-color: red;
+}
+.given {
+	background-color: lightgrey;
+}
+.warning {
+	font-size: 1.5em;
+	color: red;
+}
